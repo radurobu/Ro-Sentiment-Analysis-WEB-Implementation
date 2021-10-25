@@ -1,0 +1,39 @@
+pip3.7 install --user transformers
+pip3.7 install --user transformers==3.5
+
+import os
+from transformers import AutoTokenizer, AutoModel
+from torch import save
+os.chdir("/home/roburadu/movieclassifier/pkl_objects")
+model = AutoModel.from_pretrained("dumitrescustefan/bert-base-romanian-cased-v1")
+save(model,"/home/roburadu/movieclassifier/pkl_objects/bert-base-romanian-cased-v1.pth")
+
+# First create virtual enviroment
+mkvirtualenv myvirtualenv --python=/usr/bin/python3.7
+
+# Intall packeges
+workon myvirtualenv
+
+pip3.7 install pandas
+pip3.7 install torch==1.4.0 > /tmp/torch-install.log
+pip3.7 install flask
+pip3.7 install wtforms
+pip3.7 install keras
+pip3.7 install transformers==3.5
+pip3.7 install tensorflow==1.15.5 > /tmp/tensorflow-install.log
+pip3.7 install psutil
+
+
+
+
+pip3.7 uninstall tensorflow
+pip3.7 uninstall torch
+pip3.7 install torch==1.5.0 > /tmp/torch-install.log
+pip3.7 install transformers==3.5.1
+
+pip3.7 install torchvision==0.5.0
+
+pip3.7 install torch==1.6.0 > /tmp/torch-install.log
+pip3.7 install transformers==3.5
+
+pip3.7 install --user torch==1.4.0 > /tmp/torch-install.log
