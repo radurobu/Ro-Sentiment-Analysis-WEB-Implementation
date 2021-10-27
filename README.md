@@ -1,5 +1,6 @@
 # Ro-Sentiment-Analysis-WEB-Implementation
 # This is a Flask WEB implementation of a Romanian Sentiment Analysis Model
+# The model cand be seen in action at: https://roburadu.pythonanywhere.com/?
 
 The model used to classify Romanian comments is based on the current state of the art model architecture for Natural Language processing, the BERT model. The unannotated texts used to pre-train "Romanian BERT" are drawn from three publicly available corpora: OPUS, OSCAR and Wikipedia.
 
